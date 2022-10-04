@@ -12,12 +12,19 @@ function App() {
         setNumero (numero - 1)
     }
     
-    return <div>
-    <h1>Contador</h1>
-    <p>{numero}</p>
-    <button onClick={aumentar}>mais</button>
-    <button onClick={diminuir}>menos</button>
-</div>
-
+    return (
+        <div>
+        <div>
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+        </div>
+        <div className='borda'>
+        <p>{numero}</p>
+        <button onClick={aumentar}>mais</button>
+        <button onClick={diminuir}>menos</button>
+        </div>
+        </div>
+)
 };
 export default App;
